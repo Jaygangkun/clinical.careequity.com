@@ -14,6 +14,8 @@ class RSSController extends CI_Controller
 		parent::__construct();
 
 		$this->load->model("Reports");
+
+		checkLogin();
 	}
 
 

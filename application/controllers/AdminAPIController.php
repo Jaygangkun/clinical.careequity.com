@@ -11,6 +11,8 @@ class AdminAPIController extends CI_Controller
 
         $this->load->model("Users");
         $this->load->model("Reports");
+
+        checkLogin();
     }
 
     public function login()

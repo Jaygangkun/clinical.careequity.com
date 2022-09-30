@@ -10,11 +10,13 @@ class AdminController extends CI_Controller {
 		$this->load->model("Reports");
 		$this->load->model("Users");
 		$this->load->library('mailer');
+
+		checkLogin();
 	}
 
 	public function index(){
 		if(!isset($_SESSION['user_id'])){
-			redirect('/login');
+			redirect('https://tools.careequity.com/login');
 		}
 		else{
 			redirect('/dashboard');
@@ -22,6 +24,7 @@ class AdminController extends CI_Controller {
 	}
 
 	public function login(){
+		redirect('https://tools.careequity.com/login');
 		if($this->input->post('submit')){
 		    
 		    // for google recaptcha

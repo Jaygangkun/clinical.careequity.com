@@ -1,6 +1,6 @@
 <nav class="topnav">
     
-    <div style="flex-grow: 8;"><img src="<?= base_url() ?>assets/img/new_logo.svg" class="header_logo"></div>
+<div style="flex-grow: 8;"><a class="nav-logo-link" href="https://tools.careequity.com/"><img src="<?= base_url() ?>assets/img/new_logo.svg" class="header_logo"></a></div>
     <?php 
         $uri = $_SERVER['REQUEST_URI']; 
        
